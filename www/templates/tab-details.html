@@ -1,0 +1,91 @@
+<ion-view view-title="Workout Details">
+  <ion-content scroll="false" style="background: rgba(222,222,220,0.34);" class="padding">
+    <div class="row responsive-sm">
+      <form class="intervals" id="intervalForm" action="index.html" method="post">
+      </form>
+      <div class="col">
+        <div class="list">
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Tracks
+            </div>
+            <select class="genre" form="intervalForm">
+              <option value="trap">Trap (EDM)</option>
+              <option value="trapRap">Trap (Rap)</option>
+              <option value="house">House</option>
+              <option value="dubstep">Dubstep</option>
+              <option value="futureBass">Future Bass</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row responsive-sm">
+      <div class="col">
+        <div class="list">
+          <label class="item item-input item-select">
+            <div class="input-label">Workout Length</div>
+            <select class="exercise" form="intervalForm">
+              <option value="3">3 seconds</option>
+              <option value="30">30 seconds</option>
+              <option value="45">45 seconds</option>
+              <option value="60">1 minute</option>
+              <option value="90">1.5 minutes</option>
+              <option value="120">2 minutes</option>
+              <option value="150">2.5 minutes</option>
+              <option value="180">3 minutes</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row responsive-sm">
+      <div class="col">
+        <div class="list">
+          <label class="item item-input item-select">
+            <div class="input-label">Cooldown Length</div>
+              <select class="cooldown" form="intervalForm">
+                <option value="10">10 seconds</option>
+                <option value="20">20 seconds</option>
+                <option value="30">30 seconds</option>
+                <option value="40">40 seconds</option>
+                <option value="50">50 seconds</option>
+                <option value="60">60 seconds</option>
+              </select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row responsive-sm">
+      <div class="col">
+        <div class="list">
+          <label class="item item-input item-select">
+            <div class="input-label">Rounds</div>
+              <select class="amount" form="intervalForm">
+                <option value="1">1 Round</option>
+                <option value="2">2 Rounds</option>
+                <option value="3">3 Rounds</option>
+                <option value="4">4 Rounds</option>
+                <option value="5">5 Rounds</option>
+                <option value="6">6 Rounds</option>
+                <option value="7">7 Rounds</option>
+                <option value="8">8 Rounds</option>
+                <option value="9">9 Rounds</option>
+                <option value="10">10 Rounds</option>
+              </select>
+            </label>
+          </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row responsive-sm">
+
+    <div class="col text-center">
+      <a ui-sref="tab.workout"><button type="submit" name="submit" class="button button-dark button-balanced readyButton" id="startButton" form="intervalForm">Ready?</button></a>
+    </div>
+  </div>
+  </ion-content>
+</ion-view>

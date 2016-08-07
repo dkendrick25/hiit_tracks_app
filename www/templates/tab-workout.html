@@ -1,0 +1,33 @@
+<ion-view view-title="Workout">
+  <ion-content scroll="false" style="background: rgba(222,222,220,0.34);">
+    <div class="numbers">
+      <div class="row">
+        <div style="margin-left: 5%;"  class="col-90 text-center">
+          <span class="timerHeader">Workout</span>
+          <div class="timerBox">
+            <div id="exerciseTimer" class="timerText">00:00</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div style="margin-left: 5%;" class="col-90 text-center">
+          <span class="timerHeader">Cooldown</span>
+          <div class="timerBox">
+            <div id="cooldownTimer" class="timerText">00:00</div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-30 col-offset-10">
+        <button type="submit" name="submit" class="button  button-dark button-balanced workoutButtons" id="startButton" form="intervalForm">Start Workout!</button>
+      </div>
+      <div class="col-30 col-offset-10">
+        <button type="" name="" id="stopButton" class="button button-dark button-assertive stopMusic workoutButtons">Stop Workout!</button>
+      </div>
+    </div>
+    <audio id="countdownAudio" src="./countdown.mp3" type="audio/mpeg"></audio>
+    <audio id="cooldownAudio" src="./cooldown.mp3" type="audio/mpeg"></audio>
+    <audio id="workoutAudio" src="./workout.mp3" type="audio/mpeg"></audio>
+  </ion-content>
+</ion-view>

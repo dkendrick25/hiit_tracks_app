@@ -1,0 +1,52 @@
+.home {
+  background-image: url(hiitTracks.png);
+}
+
+.entranceButton {
+  display: block;
+  font-size: 150px;
+  margin-left: 33%;
+  margin-top: 100%;
+}
+
+.spinner svg {
+  width: 150px;
+  height: 150px;
+}
+
+.timerHeader {
+  display: block;
+  font-size: 35px;
+  margin-top: 40%;
+}
+
+.timerText {
+  font-size: 100px;
+  margin-top: 15%;
+}
+
+.workoutButtons {
+  margin-top: 85%;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.readyButton {
+  margin-top: 20%;
+  box-shadow: 3px 3px 3px grey;
+}
+
+#startButton {
+  color: #7CFC00;
+}
+
+#stopButton {
+  color: red;
+}
+
+.list {
+  margin-top: 15px;
+}
+
+.numbers {
+  margin-top: -15%;
+}

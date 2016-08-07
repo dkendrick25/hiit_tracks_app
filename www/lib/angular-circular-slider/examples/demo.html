@@ -1,0 +1,36 @@
+<html ng-app="test-cs">
+
+	<head> 
+		<title> angular circular slider</title>
+		<link rel="stylesheet" href="../src/css/angular-circular-slider.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script src="../src/js/angular-circular-slider.js"> </script>
+	</head>
+
+	<body ng-controller="test">
+	<script> 
+
+    var app = angular.module('test-cs', ['angular.circular-slider']);
+    app.controller('test', function ($scope) {
+    	$scope.min = 10;
+    	$scope.max = 100;
+    	$scope.shape='Circle';
+    	$scope.value = 20;
+
+			$scope.onSlide = function onSlide (value) {
+				console.log('on slide  ' + value);
+			}
+		
+			$scope.onSlideEnd = function onSlideEnd(value) {
+				console.log('on slide end  ' + value);
+			}
+    });
+	</script>
+
+	<h2> circular slider directive </h2>
+	<circular-slider class='my-slider' shape='{{shape}}' touch="true" animate='true' on-slide='onSlide' on-slide-end='onSlideEnd' min="min" max="max" value="value">
+		{{value}}
+	</circular-slider>
+	</body>
+
+</html>
